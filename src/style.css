@@ -1,0 +1,21 @@
+
+:root {
+    --primary: #007A53;
+    --secondary: #FF6720;
+    --grey60: #16161A;
+    --grey50: #242629;
+    --grey40: #94A1B2;
+    --grey30: #72757E;
+    --white40: #FFFFFE;
+    --white50: #F2F2F2;
+    --tertiary40: #DA291C;
+
+}
+body{
+  font-family: 'Inter', sans-serif;
+  background: var(--white50);
+}
+
+.img-logo{
+  width: 120px;
+}
