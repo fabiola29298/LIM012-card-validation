@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -9,11 +11,70 @@
   </head>
   <body>
     <header>
-      <img class="img-logo" src="./img/logo.png" alt="Logo de 7eleven">
-      <h1>Bienvenido</h1>
-      <h3>Selecciona los productos que quieres comprar.</h3>
+      <div class="wrapper">
+        <img class="img-logo" src="./img/logo.png" alt="Logo de 7eleven">
+        <h1>Bienvenido</h1>
+        <h3>Selecciona los productos que quieres comprar.</h3>
+      </div>
     </header>
-    <main></main>
+    <main>
+      <div class="wrapper">
+        <div class="products">
+          <div class="container">
+            <img src="./img/papas-fritas.png" alt="">
+            <div class="info-product">
+              <p class="item">Papas Pringles Original <br>124 Gr</p>
+              <p class="price"> 18 Bs</p>
+            </div>
+          </div>
+          <div class="container">
+            <img src="./img/coca-cola.png" alt="">
+            <div class="info-product">
+              <p class="item">Gaseosa Coca-Cola <br>x 1.5 Litros</p>
+              <p class="price"> 14 Bs</p>
+            </div>
+          </div>
+          <div class="container">
+            <img src="./img/sandwich.png" alt="">
+            <div class="info-product">
+              <p class="item">Sándwich de tomate, <br> queso  y jamon </p>
+              <p class="price"> 10 Bs</p>
+            </div>
+          </div>
+          <div class="container">
+            <img src="./img/helado.png" alt="">
+            <div class="info-product">
+              <p class="item">Helado gemelos <br>cherry/piña 70ml</p>
+              <p class="price"> 2 Bs</p>
+            </div>
+          </div>
+          <div class="container">
+            <img src="./img/yogurt-gloria.png" alt="">
+            <div class="info-product">
+              <p class="item">Yogurt GLORIA Frutado <br> Fresa Vaso 120g</p>
+              <p class="price"> 5 Bs</p>
+            </div>
+          </div>
+          <div class="container">
+            <img src="./img/yogurt-pil.png" alt="">
+            <div class="info-product">
+              <p class="item">Yogurt Frutilla <br> 1L Pils</p>
+              <p class="price"> 4 Bs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sold">
+          <p class="count" >Agregar 1 al carrito</p>
+          <p class="total" >40 Bs</p>
+          <div class="text-sold">
+
+          </div>
+        </div>
+      </div>
+
+
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
