@@ -27,12 +27,16 @@ h3{
 .wrapper{
   text-align: center;
   padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .img-logo{
   width: 40%;
 }
 
-.container{
+.container, .item-list{
   background: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
   border-radius: 20px;
@@ -68,23 +72,43 @@ p{
   margin-block-end: 40px;
 }
 
-.wrapper{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.sold{
+  input[type=text]:focus {
+      border-color:#333;
+  }
+  input[type=submit] {
+  padding:10px 15px;
+  margin-block-end: 8px;
+
+  border:0 none;
   background: #FA4A0C;
+
+  -webkit-border-radius: 5px;
   border-radius: 40px;
+
   position: fixed;
   bottom: 0;
   z-index:1;
   width: 80%;
   display: flex;
   justify-content: space-around;
-}
-.sold p{
-  padding: 4px;
+  cursor:pointer;
 
-  color: var(--white50);
+  color: #FFFFFF;
+  font-weight: 600;
 }
+
+/* carrito */
+.list, .total{
+  width: 100%;
+
+}
+.item-list, .total{
+  justify-content: space-around;
+}
+.total{
+  padding: 5px;
+}
+.item-list img{
+  width: 50px;
+}
+/* fin de carrito */

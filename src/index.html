@@ -19,60 +19,88 @@
     </header>
     <main>
       <div class="wrapper">
-        <div class="products">
-          <div class="container">
-            <img src="./img/papas-fritas.png" alt="">
-            <div class="info-product">
-              <p class="item">Papas Pringles Original <br>124 Gr</p>
-              <p class="price"> 18 Bs</p>
+        <inpu onsubmit="return handleData()" method="post" action="https://postman-echo.com/post">
+          <div class="products">
+            <div class="container">
+              <img src="./img/papas-fritas.png" alt="">
+              <div class="info-product">
+                <input type="checkbox" value="papas" />
+                <label for="send_newsletter">
+                  <p class="item">Papas Pringles Original <br>124 Gr</p>
+                  <p class="price"> 18 Bs</p>
+                </label>
+              </div>
+            </div>
+            <div class="container">
+              <img src="./img/coca-cola.png" alt="">
+              <div class="info-product">
+                <input type="checkbox" value="coca" />
+                <label for="send_newsletter">
+                  <p class="item">Gaseosa Coca-Cola <br>x 1.5 Litros</p>
+                  <p class="price"> 14 Bs</p>
+                </label>
+              </div>
+            </div>
+            <div class="container">
+              <img src="./img/sandwich.png" alt="">
+              <div class="info-product">
+                <input type="checkbox"  value="sandwich" />
+                <label for="send_newsletter">
+                  <p class="item">Sándwich de tomate, <br> queso  y jamon </p>
+                  <p class="price"> 10 Bs</p>
+                </label>
+              </div>
+            </div>
+            <div class="container">
+              <img src="./img/helado.png" alt="">
+              <div class="info-product">
+                <input type="checkbox"  value="helado" />
+                <label for="send_newsletter">
+                  <p class="item">Helado gemelos <br>cherry/piña 70ml</p>
+                  <p class="price"> 2 Bs</p>
+                </label>
+              </div>
+            </div>
+            <div class="container">
+              <img src="./img/yogurt-gloria.png" alt="">
+              <div class="info-product">
+                <input type="checkbox"  value="gloria" />
+                <label for="send_newsletter">
+                  <p class="item">Yogurt GLORIA Frutado <br> Fresa Vaso 120g</p>
+                  <p class="price"> 5 Bs</p>
+                </label>
+              </div>
+            </div>
+            <div class="container">
+              <img src="./img/yogurt-pil.png" alt="">
+              <div class="info-product">
+                <input type="checkbox"  value="pil" />
+                <label for="send_newsletter">
+                  <p class="item">Yogurt Frutilla <br> 1L Pils</p>
+                  <p class="price"> 4 Bs</p>
+                </label>
+              </div>
             </div>
           </div>
-          <div class="container">
-            <img src="./img/coca-cola.png" alt="">
-            <div class="info-product">
-              <p class="item">Gaseosa Coca-Cola <br>x 1.5 Litros</p>
-              <p class="price"> 14 Bs</p>
-            </div>
-          </div>
-          <div class="container">
-            <img src="./img/sandwich.png" alt="">
-            <div class="info-product">
-              <p class="item">Sándwich de tomate, <br> queso  y jamon </p>
-              <p class="price"> 10 Bs</p>
-            </div>
-          </div>
-          <div class="container">
-            <img src="./img/helado.png" alt="">
-            <div class="info-product">
-              <p class="item">Helado gemelos <br>cherry/piña 70ml</p>
-              <p class="price"> 2 Bs</p>
-            </div>
-          </div>
-          <div class="container">
-            <img src="./img/yogurt-gloria.png" alt="">
-            <div class="info-product">
-              <p class="item">Yogurt GLORIA Frutado <br> Fresa Vaso 120g</p>
-              <p class="price"> 5 Bs</p>
-            </div>
-          </div>
-          <div class="container">
-            <img src="./img/yogurt-pil.png" alt="">
-            <div class="info-product">
-              <p class="item">Yogurt Frutilla <br> 1L Pils</p>
-              <p class="price"> 4 Bs</p>
-            </div>
-          </div>
-        </div>
+          <input type="submit" name="submit" value="Carrito vacio" />
 
-        <div class="sold">
-          <p class="count" >Agregar 1 al carrito</p>
-          <p class="total" >40 Bs</p>
-          <div class="text-sold">
-
-          </div>
-        </div>
+        </form>
       </div>
 
+      <div class="wrapper">
+        <h1>Carrito</h1>
+        <div class="list">
+          <div class="item-list">
+            <img src="./img/yogurt-pil.png" alt="">
+            <p class="item">Yogurt Frutilla 1L Pils</p>
+            <p class="price"> 4 Bs</p>
+          </div>
+        </div>
+        <div class="total container">
+          <p class="item">Total</p>
+          <p class="price"> 44 Bs</p>
+        </div>
+      </div>
 
     </main>
     <footer></footer>
