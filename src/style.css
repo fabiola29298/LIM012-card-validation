@@ -85,10 +85,10 @@ p{
   -webkit-border-radius: 5px;
   border-radius: 40px;
 
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   z-index:1;
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   cursor:pointer;
@@ -112,3 +112,24 @@ p{
   width: 50px;
 }
 /* fin de carrito */
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
+}
