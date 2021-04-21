@@ -28,12 +28,15 @@ h3{
   text-align: center;
   padding: 16px;
 
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .img-logo{
   width: 40%;
+  margin: 1rem;
 }
 
 .container, .item-list{
@@ -46,10 +49,12 @@ h3{
 
   display: flex;
 }
+.container{
+  flex: 1;
+}
 .info-product{
   display: flex;
   flex-direction: column;
-  width: 100%;
   justify-content: center;
   align-items: center;
 
@@ -131,5 +136,22 @@ p{
 @media only screen and (min-width: 961px) {
   body {
     background-color: #B2D6FF; /* Blue */
+  }
+  .img-logo{
+    width: 20%;
+  }
+  .products{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container{
+    min-width: 300px;
+    max-width: 300px;
+  }
+  input[type=submit] {
+    width: 300px;
+  }
+  .list{
+    width: 50%;
   }
 }
