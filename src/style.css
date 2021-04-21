@@ -80,7 +80,7 @@ p{
   input[type=text]:focus {
       border-color:#333;
   }
-  input[type=submit] {
+  input[type=submit], .btn-volver {
   padding:10px 15px;
   margin-block-end: 8px;
 
@@ -116,6 +116,9 @@ p{
 .item-list img{
   width: 50px;
 }
+#pago{
+  display: none;
+}
 /* fin de carrito */
 
 /* Mobile Styles */
@@ -148,7 +151,7 @@ p{
     min-width: 300px;
     max-width: 300px;
   }
-  input[type=submit] {
+  input[type=submit], .btn-volver {
     width: 300px;
   }
   .list{

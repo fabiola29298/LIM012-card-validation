@@ -16,14 +16,14 @@
     <header>
       <div class="wrapper">
         <img class="img-logo" src="./img/logo.png" alt="Logo de 7eleven">
-        <h1>Bienvenido</h1>
-        <h3>Selecciona los productos que quieres comprar.</h3>
       </div>
     </header>
     <main>
       <div class="wrapper" id="carrito">
-        <!-- <input onsubmit="return handleData()" method="post" action="https://postman-echo.com/post"> -->
-          <div class="products">
+        <h1>Bienvenido</h1>
+        <h3>Selecciona los productos que quieres comprar.</h3>
+        <br>
+        <div class="products">
             <div class="container">
               <img src="./img/papas-fritas.png" alt="">
               <div class="info-product">
@@ -90,12 +90,14 @@
         </form>
       </div>
 
-      <div class="wrapper">
+      <div class="wrapper" id="pago">
         <h1>Carrito</h1>
+        <h3>Todos los productos que seleccionó.</h3>
+
         <div class="list">
           <div class="item-list">
             <img src="./img/yogurt-pil.png" alt="">
-            <p class="item">Yogurt Frutilla 1L Pils</p>
+            <p class="item">Yogurt Frutilla 1L Pil</p>
             <p class="price"> 4 Bs</p>
           </div>
         </div>
@@ -103,11 +105,12 @@
           <p class="item">Total</p>
           <p class="price"> 44 Bs</p>
         </div>
+        <button class="btn-volver">Volver a seleccionar productos</button>
         <!-- TARJETA   -->
-<div class="contenedor">
+        <div class="contenedor">
 
-  <!-- Tarjeta -->
-  <section class="tarjeta" id="tarjeta">
+          <!-- Tarjeta -->
+          <section class="tarjeta" id="tarjeta">
     <div class="delantera">
       <div class="logo-marca" id="logo-marca">
         <!-- <img src="img/logos/visa.png" alt=""> -->
@@ -160,7 +163,7 @@
   </div>
 
   <!-- Formulario -->
-  <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+  <form action="" id="formulario-tarjeta" class="formulario-tarjeta active">
     <div class="grupo">
       <label for="inputNumero">Número Tarjeta</label>
       <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
