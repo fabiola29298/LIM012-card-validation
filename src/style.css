@@ -80,7 +80,7 @@ p{
   input[type=text]:focus {
       border-color:#333;
   }
-  input[type=submit], .btn-volver {
+  .btn-orange {
   padding:10px 15px;
   margin-block-end: 8px;
 
@@ -116,7 +116,7 @@ p{
 .item-list img{
   width: 50px;
 }
-#pago{
+#payment{
   display: none;
 }
 /* fin de carrito */
