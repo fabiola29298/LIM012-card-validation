@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style-card.css" />
@@ -27,7 +27,7 @@
             <div class="container">
               <img src="./img/papas-fritas.png" alt="">
               <div class="info-product">
-                <input type="checkbox" value="papas" />
+                <input type="checkbox" name="product" value="papas" />
                 <label for="send_newsletter">
                   <p class="item">Papas Pringles Original <br>124 Gr</p>
                   <p class="price"> 18 Bs</p>
@@ -37,7 +37,7 @@
             <div class="container">
               <img src="./img/coca-cola.png" alt="">
               <div class="info-product">
-                <input type="checkbox" value="coca" />
+                <input type="checkbox" name="product" value="coca" />
                 <label for="send_newsletter">
                   <p class="item">Gaseosa Coca-Cola <br>x 1.5 Litros</p>
                   <p class="price"> 14 Bs</p>
@@ -47,7 +47,7 @@
             <div class="container">
               <img src="./img/sandwich.png" alt="">
               <div class="info-product">
-                <input type="checkbox"  value="sandwich" />
+                <input type="checkbox" name="product"  value="sandwich" />
                 <label for="send_newsletter">
                   <p class="item">Sándwich de tomate, <br> queso  y jamon </p>
                   <p class="price"> 10 Bs</p>
@@ -57,7 +57,7 @@
             <div class="container">
               <img src="./img/helado.png" alt="">
               <div class="info-product">
-                <input type="checkbox"  value="helado" />
+                <input type="checkbox" name="product"  value="helado" />
                 <label for="send_newsletter">
                   <p class="item">Helado gemelos <br>cherry/piña 70ml</p>
                   <p class="price"> 2 Bs</p>
@@ -67,7 +67,7 @@
             <div class="container">
               <img src="./img/yogurt-gloria.png" alt="">
               <div class="info-product">
-                <input type="checkbox"  value="gloria" />
+                <input type="checkbox" name="product"  value="gloria" />
                 <label for="send_newsletter">
                   <p class="item">Yogurt GLORIA Frutado <br> Fresa Vaso 120g</p>
                   <p class="price"> 5 Bs</p>
@@ -77,7 +77,7 @@
             <div class="container">
               <img src="./img/yogurt-pil.png" alt="">
               <div class="info-product">
-                <input type="checkbox"  value="pil" />
+                <input type="checkbox" name="product"  value="pil" />
                 <label for="send_newsletter">
                   <p class="item">Yogurt Frutilla <br> 1L Pils</p>
                   <p class="price"> 4 Bs</p>
@@ -85,9 +85,10 @@
               </div>
             </div>
           </div>
-          <input type="submit" name="submit" value="Carrito vacio" class="btn-abrir"/>
+          <!-- <input type="submit" name="submit" value="Carrito vacio" class="btn-abrir"/> -->
+          <button class="btn-abrir">get</button>
 
-        </form>
+        <!-- </form> -->
       </div>
 
       <div class="wrapper" id="pago">
