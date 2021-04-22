@@ -1,0 +1,38 @@
+[
+  {
+    "id":1,
+    "name": "Papas Pringles Original 124 Gr",
+    "price":18,
+    "url": "./img/papas-fritas.png"
+  },
+  {
+    "id": 2,
+    "name": "Gaseosa Coca-Cola x 1.5 Litros",
+    "price": 14,
+    "url": "./img/coca-cola.png"
+  },
+  {
+    "id": 3,
+    "name": "Sándwich de tomate, queso  y jamon",
+    "price": 10,
+    "url": "./img/sandwich.png"
+  },
+  {
+    "id": 4,
+    "name": "Helado gemelos cherry/piña 70ml",
+    "price": 2,
+    "url": "./img/helado.png"
+  },
+  {
+    "id": 5,
+    "name": "Yogurt GLORIA Frutado Fresa Vaso 120g",
+    "price": 5,
+    "url": "./img/yogurt-gloria.png"
+  },
+  {
+    "id": 6,
+    "name": "Yogurt Frutilla 1L Pils",
+    "price": 4,
+    "url": "./img/yogurt-pil.png"
+  }
+]
