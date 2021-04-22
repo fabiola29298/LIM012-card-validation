@@ -8,8 +8,8 @@
   logoMarca = document.querySelector('#logo-marca'),
   firma = document.querySelector('#tarjeta .firma p'),
   mesExpiracion = document.querySelector('#tarjeta .mes'),
-  yearExpiracion = document.querySelector('#tarjeta .year');
-// ccv = document.querySelector('#tarjeta .ccv');
+  yearExpiracion = document.querySelector('#tarjeta .year'),
+  ccv = document.querySelector('#tarjeta .ccv');
 
 // * Volteamos la tarjeta para mostrar el frente.
 const mostrarFrente = () => {
@@ -54,7 +54,7 @@ formulario.inputNumero.addEventListener('keyup', (e) => {
     .replace(/([0-9]{4})/g, '$1 ')
     // Elimina el ultimo espaciado
     .trim();
-
+  numeroTarjeta.value = valorInput.replace(/\s/g, '');
   numeroTarjeta.textContent = valorInput;
 
   if (valorInput == '') {
