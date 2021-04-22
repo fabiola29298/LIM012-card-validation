@@ -117,7 +117,15 @@ p{
   width: 50px;
 }
 #payment{
-  display: none;
+  /* display: none; */
+}
+#text-validar{
+  padding: 10px;
+
+}
+#text-validar p{
+  font-size: 20px;
+
 }
 /* fin de carrito */
 

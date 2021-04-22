@@ -88,11 +88,11 @@
   </section>
 
   <!-- Contenedor Boton Abrir Formulario -->
-  <div class="contenedor-btn">
-    <button class="btn-abrir-formulario" id="btn-abrir-formulario">
-      <i class="fas fa-plus"></i>
-    </button>
-  </div>
+  <!-- <div class="contenedor-btn"> -->
+    <!-- <button class="btn-abrir-formulario" id="btn-abrir-formulario"> -->
+      <!-- <i class="fas fa-plus"></i> -->
+    <!-- </button> -->
+  <!-- </div> -->
 
   <!-- Formulario -->
   <form action="" id="formulario-tarjeta" class="formulario-tarjeta active">
@@ -128,7 +128,9 @@
         <input type="text" id="inputCCV" maxlength="3">
       </div>
     </div>
-    <button type="submit" class="btn-enviar">Enviar</button>
+    <button class="btn-enviar pagar">Validar tarjeta</button>
+    <div id="text-validar">
+    </div>
   </form>
 </div>
 
@@ -137,7 +139,7 @@
 
     </main>
     <footer></footer>
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
     <script src="card.js" ></script>
     <script src="form-products.js" ></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
