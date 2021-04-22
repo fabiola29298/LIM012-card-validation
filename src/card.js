@@ -2,7 +2,7 @@
   const tarjeta = document.querySelector('#tarjeta'),
 
 
-  formulario = document.querySelector('#formulario-tarjeta'),
+
     selectYear = document.querySelector('#selectYear'),
     selectMes = document.querySelector('#selectMes'),
     inputNumero = document.querySelector('#inputNumero'),
@@ -13,8 +13,8 @@
   firma = document.querySelector('#tarjeta .firma p'),
   mesExpiracion = document.querySelector('#tarjeta .mes'),
   yearExpiracion = document.querySelector('#tarjeta .year'),
-  ccv = document.querySelector('#tarjeta .ccv');
-inputCCV = document.querySelector('#inputCCV')
+  ccv = document.querySelector('#tarjeta .ccv'),
+inputCCV = document.querySelector('#inputCCV');
 
 // * Volteamos la tarjeta para mostrar el frente.
 const mostrarFrente = () => {

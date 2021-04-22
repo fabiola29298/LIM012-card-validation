@@ -3,7 +3,7 @@ import validator from './validator.js';
 
 const btnValidar = document.querySelector('.pagar');
 const btnReiniciar = document.querySelector('.reiniciar');
-const txtValidar = document.querySelector('#text-validar');
+// const txtValidar = document.querySelector('#text-validar');
 let textResultado = document.querySelector('#text-validar');
 const numeroTarjetaCard = document.querySelector('.numero');
 const numeroTarjeta = document.querySelector('#inputNumero'),
