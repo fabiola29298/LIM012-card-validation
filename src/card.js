@@ -1,8 +1,7 @@
-const tarjeta = document.querySelector('#tarjeta'),
-  pago = document.querySelector('#pago'),
-  carrito = document.querySelector('#carrito'),
-  btnAbrirFormulario = document.querySelector('.btn-abrir'),
-  btnVolver = document.querySelector('.btn-volver'),
+
+  const tarjeta = document.querySelector('#tarjeta'),
+
+
   formulario = document.querySelector('#formulario-tarjeta'),
   numeroTarjeta = document.querySelector('#tarjeta .numero'),
   nombreTarjeta = document.querySelector('#tarjeta .nombre'),
@@ -10,7 +9,7 @@ const tarjeta = document.querySelector('#tarjeta'),
   firma = document.querySelector('#tarjeta .firma p'),
   mesExpiracion = document.querySelector('#tarjeta .mes'),
   yearExpiracion = document.querySelector('#tarjeta .year');
-ccv = document.querySelector('#tarjeta .ccv');
+// ccv = document.querySelector('#tarjeta .ccv');
 
 // * Volteamos la tarjeta para mostrar el frente.
 const mostrarFrente = () => {
@@ -24,18 +23,7 @@ tarjeta.addEventListener('click', () => {
   tarjeta.classList.toggle('active');
 });
 
-// * Boton de abrir formulario
-btnAbrirFormulario.addEventListener('click', () => {
-  // btnAbrirFormulario.classList.toggle('active');
-  // formulario.classList.toggle('active');
-  pago.style.display = 'flex';
-  carrito.style.display = 'none';
-});
-// Boton de volver a seleccionar productos
-btnVolver.addEventListener('click', () => {
-  pago.style.display = 'none';
-  carrito.style.display = 'flex';
-});
+
 // * Select del mes generado dinamicamente.
 for (let i = 1; i <= 12; i++) {
   let opcion = document.createElement('option');
