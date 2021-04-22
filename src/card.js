@@ -3,6 +3,10 @@
 
 
   formulario = document.querySelector('#formulario-tarjeta'),
+    selectYear = document.querySelector('#selectYear'),
+    selectMes = document.querySelector('#selectMes'),
+    inputNumero = document.querySelector('#inputNumero'),
+    inputNombre = document.querySelector('#inputNombre'),
   numeroTarjeta = document.querySelector('#tarjeta .numero'),
   nombreTarjeta = document.querySelector('#tarjeta .nombre'),
   logoMarca = document.querySelector('#logo-marca'),
@@ -10,6 +14,7 @@
   mesExpiracion = document.querySelector('#tarjeta .mes'),
   yearExpiracion = document.querySelector('#tarjeta .year'),
   ccv = document.querySelector('#tarjeta .ccv');
+inputCCV = document.querySelector('#inputCCV')
 
 // * Volteamos la tarjeta para mostrar el frente.
 const mostrarFrente = () => {
@@ -29,7 +34,7 @@ for (let i = 1; i <= 12; i++) {
   let opcion = document.createElement('option');
   opcion.value = i;
   opcion.innerText = i;
-  formulario.selectMes.appendChild(opcion);
+  selectMes.appendChild(opcion);
 }
 
 // * Select del año generado dinamicamente.
@@ -38,14 +43,14 @@ for (let i = yearActual; i <= yearActual + 8; i++) {
   let opcion = document.createElement('option');
   opcion.value = i;
   opcion.innerText = i;
-  formulario.selectYear.appendChild(opcion);
+  selectYear.appendChild(opcion);
 }
 
 // * Input numero de tarjeta
-formulario.inputNumero.addEventListener('keyup', (e) => {
+inputNumero.addEventListener('keyup', (e) => {
   let valorInput = e.target.value;
 
-  formulario.inputNumero.value = valorInput
+  inputNumero.value = valorInput
     // Eliminamos espacios en blanco
     .replace(/\s/g, '')
     // Eliminar las letras
@@ -80,10 +85,10 @@ formulario.inputNumero.addEventListener('keyup', (e) => {
 });
 
 // * Input nombre de tarjeta
-formulario.inputNombre.addEventListener('keyup', (e) => {
+inputNombre.addEventListener('keyup', (e) => {
   let valorInput = e.target.value;
 
-  formulario.inputNombre.value = valorInput.replace(/[0-9]/g, '');
+  inputNombre.value = valorInput.replace(/[0-9]/g, '');
   nombreTarjeta.textContent = valorInput;
   firma.textContent = valorInput;
 
@@ -95,28 +100,28 @@ formulario.inputNombre.addEventListener('keyup', (e) => {
 });
 
 // * Select mes
-formulario.selectMes.addEventListener('change', (e) => {
+document.querySelector('#selectMes').addEventListener('change', (e) => {
   mesExpiracion.textContent = e.target.value;
   mostrarFrente();
 });
 
 // * Select Año
-formulario.selectYear.addEventListener('change', (e) => {
+document.querySelector('#selectYear').addEventListener('change', (e) => {
   yearExpiracion.textContent = e.target.value.slice(2);
   mostrarFrente();
 });
 
 // * CCV
-formulario.inputCCV.addEventListener('keyup', () => {
+inputCCV.addEventListener('keyup', () => {
   if (!tarjeta.classList.contains('active')) {
     tarjeta.classList.toggle('active');
   }
 
-  formulario.inputCCV.value = formulario.inputCCV.value
+  inputCCV.value = inputCCV.value
     // Eliminar los espacios
     .replace(/\s/g, '')
     // Eliminar las letras
     .replace(/\D/g, '');
 
-  ccv.textContent = formulario.inputCCV.value;
+  ccv.textContent = inputCCV.value;
 });

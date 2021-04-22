@@ -119,6 +119,9 @@ p{
 #payment{
   /* display: none; */
 }
+#cart{
+  display: none;
+}
 #text-validar{
   padding: 10px;
 
