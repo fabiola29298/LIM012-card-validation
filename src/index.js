@@ -2,8 +2,9 @@ import validator from './validator.js';
 
 
 const btnValidar = document.querySelector('.pagar');
+const btnReiniciar = document.querySelector('.reiniciar');
 const txtValidar = document.querySelector('#text-validar');
-
+let textResultado = document.querySelector('#text-validar');
 const numeroTarjetaCard = document.querySelector('.numero');
 const numeroTarjeta = document.querySelector('#inputNumero'),
   nombreExpiracion = document.querySelector('#inputNombre'),
@@ -21,15 +22,15 @@ btnValidar.addEventListener('click', () => {
   else{
     numeroTarjeta.value = numeroTarjeta.value.replace(/\s/g, '');
     let validandoNumero = validator.isValid(numeroTarjeta.value);
-    let imagen = document.createElement("P");
+
     if (validandoNumero) {
-      imagen.innerText = 'Tu tarjeta es valida';
-      imagen.style.color = "green";
+      textResultado.innerText = 'Tu tarjeta es valida';
+      textResultado.style.color = 'green';
 
     }
     else {
-      imagen.innerText = 'Tu tarjeta es no valida';
-      imagen.style.color = "red";
+      textResultado.innerText = 'Tu tarjeta es no valida';
+      textResultado.style.color = 'red';
 
     }
     numeroTarjeta.value = validator.maskify(numeroTarjeta.value);
@@ -39,10 +40,23 @@ btnValidar.addEventListener('click', () => {
     mesExpiracion.disabled = true;
     yearExpiracion.disabled = true;
     ccv.disabled = true;
-    txtValidar.appendChild(imagen);
+    btnReiniciar.style.display = 'flex';
+    btnValidar.style.display = 'none';
+    // txtValidar.appendChild(textResultado);
   }
 
 
 });
 
+
+btnReiniciar.addEventListener('click', () => {
+    numeroTarjeta.disabled = false;
+    nombreExpiracion.disabled = false;
+    mesExpiracion.disabled = false;
+    yearExpiracion.disabled = false;
+    ccv.disabled = false;
+    btnValidar.style.display = 'flex';
+    btnReiniciar.style.display = 'none';
+  textResultado.innerText='';
+});
 

@@ -133,7 +133,7 @@ p{
   padding: 10px;
 
 }
-.showCart{
+.showCart, .reiniciar{
   background: #72757E;
 }
 .formulario-tarjeta .btn-orange{
@@ -143,6 +143,9 @@ p{
 #text-validar p{
   font-size: 20px;
 
+}
+.reiniciar{
+  display: none;
 }
 /* fin de carrito */
 
