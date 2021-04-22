@@ -23,68 +23,7 @@
         <h1>Bienvenido</h1>
         <h3>Selecciona los productos que quieres comprar.</h3>
         <br>
-        <div class="products">
-            <div class="container">
-              <img src="./img/papas-fritas.png" alt="">
-              <div class="info-product">
-                <input type="checkbox" name="product" value="papas" />
-                <label for="send_newsletter">
-                  <p class="item">Papas Pringles Original <br>124 Gr</p>
-                  <p class="price"> 18 Bs</p>
-                </label>
-              </div>
-            </div>
-            <div class="container">
-              <img src="./img/coca-cola.png" alt="">
-              <div class="info-product">
-                <input type="checkbox" name="product" value="coca" />
-                <label for="send_newsletter">
-                  <p class="item">Gaseosa Coca-Cola <br>x 1.5 Litros</p>
-                  <p class="price"> 14 Bs</p>
-                </label>
-              </div>
-            </div>
-            <div class="container">
-              <img src="./img/sandwich.png" alt="">
-              <div class="info-product">
-                <input type="checkbox" name="product"  value="sandwich" />
-                <label for="send_newsletter">
-                  <p class="item">Sándwich de tomate, <br> queso  y jamon </p>
-                  <p class="price"> 10 Bs</p>
-                </label>
-              </div>
-            </div>
-            <div class="container">
-              <img src="./img/helado.png" alt="">
-              <div class="info-product">
-                <input type="checkbox" name="product"  value="helado" />
-                <label for="send_newsletter">
-                  <p class="item">Helado gemelos <br>cherry/piña 70ml</p>
-                  <p class="price"> 2 Bs</p>
-                </label>
-              </div>
-            </div>
-            <div class="container">
-              <img src="./img/yogurt-gloria.png" alt="">
-              <div class="info-product">
-                <input type="checkbox" name="product"  value="gloria" />
-                <label for="send_newsletter">
-                  <p class="item">Yogurt GLORIA Frutado <br> Fresa Vaso 120g</p>
-                  <p class="price"> 5 Bs</p>
-                </label>
-              </div>
-            </div>
-            <div class="container">
-              <img src="./img/yogurt-pil.png" alt="">
-              <div class="info-product">
-                <input type="checkbox" name="product"  value="pil" />
-                <label for="send_newsletter">
-                  <p class="item">Yogurt Frutilla <br> 1L Pils</p>
-                  <p class="price"> 4 Bs</p>
-                </label>
-              </div>
-            </div>
-          </div>
+        <div class="products" id="products"></div>
           <!-- <input type="submit" name="submit" value="Carrito vacio" class="btn-abrir"/> -->
           <button class="btn-abrir">get</button>
 
@@ -95,17 +34,9 @@
         <h1>Carrito</h1>
         <h3>Todos los productos que seleccionó.</h3>
 
-        <div class="list">
-          <div class="item-list">
-            <img src="./img/yogurt-pil.png" alt="">
-            <p class="item">Yogurt Frutilla 1L Pil</p>
-            <p class="price"> 4 Bs</p>
-          </div>
-        </div>
-        <div class="total container">
-          <p class="item">Total</p>
-          <p class="price"> 44 Bs</p>
-        </div>
+        <div class="list"></div>
+        <div class="total container"></div>
+
         <button class="btn-volver">Volver a seleccionar productos</button>
         <!-- TARJETA   -->
         <div class="contenedor">
@@ -206,7 +137,7 @@
 
     </main>
     <footer></footer>
-    <script src="index.js" type="module"></script>
+    <script src="index.js"></script>
     <script src="card.js" ></script>
     <script src="form-products.js" ></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
