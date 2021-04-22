@@ -284,3 +284,17 @@
 .formulario-tarjeta .btn-enviar:hover {
   background: #1850b1;
 }
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    /* background-color: #F09A9D; Red */
+  }
+  .flexbox{
+    display: flex;
+    flex-direction: column;
+    margin: 10px
+  }
+  .grupo-select{
+    /* margin: 5rem; */
+  }
+}

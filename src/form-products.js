@@ -81,6 +81,10 @@ btnShowPayment.addEventListener('click', () => {
   viewPayment.style.display = 'flex';
   viewCart.style.display = 'none';
   showProductsList();
+  window.scroll({
+    top: 0,
+    behavior: 'smooth'
+  });
 });
 
 // Open product list

@@ -76,7 +76,14 @@ p{
 .products{
   margin-block-end: 40px;
 }
-
+  input[type=checkbox] {
+    /* Doble-tamaño Checkboxes */
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari y Chrome */
+    -o-transform: scale(2); /* Opera */
+    margin: 1.5rem;
+  }
   input[type=text]:focus {
       border-color:#333;
   }
@@ -93,7 +100,7 @@ p{
   /* position: fixed; */
   bottom: 0;
   z-index:1;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: space-around;
   cursor:pointer;
@@ -117,14 +124,21 @@ p{
   width: 50px;
 }
 #payment{
-  /* display: none; */
+  display: none;
 }
 #cart{
-  display: none;
+  /* display: none; */
 }
 #text-validar{
   padding: 10px;
 
+}
+.showCart{
+  background: #72757E;
+}
+.formulario-tarjeta .btn-orange{
+  width: 50%;
+  margin-inline-start: 25%;
 }
 #text-validar p{
   font-size: 20px;
@@ -132,24 +146,12 @@ p{
 }
 /* fin de carrito */
 
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-  body {
-    background-color: #F09A9D; /* Red */
-  }
-}
 
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  body {
-    background-color: #F5CF8E; /* Yellow */
-  }
-}
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   body {
-    background-color: #B2D6FF; /* Blue */
+    /* background-color: #B2D6FF; Blue */
   }
   .img-logo{
     width: 20%;
