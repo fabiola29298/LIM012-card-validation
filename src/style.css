@@ -148,7 +148,10 @@ p{
   display: none;
 }
 /* fin de carrito */
-
+.footer{
+  margin: 1em;
+  text-align: center;
+}
 
 
 /* Desktop Styles */
