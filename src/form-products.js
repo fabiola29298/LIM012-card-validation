@@ -57,6 +57,7 @@ function showProductsList() {
 function checkProducts(data){
   let sum = 0 ;
   const checkboxes = document.querySelectorAll('input[name="product"]:checked');
+
   for (let item of data) {
     checkboxes.forEach((checkbox) => {
       if (item.id == checkbox.value) {
@@ -78,13 +79,21 @@ function checkProducts(data){
 
 // Open payment form, credit card and shopping cart list
 btnShowPayment.addEventListener('click', () => {
-  viewPayment.style.display = 'flex';
-  viewCart.style.display = 'none';
-  showProductsList();
-  window.scroll({
-    top: 0,
-    behavior: 'smooth'
-  });
+  const checkboxes = document.querySelectorAll('input[name="product"]:checked');
+
+  if (checkboxes == null || checkboxes.length < 1) {
+    alert('Selecciona algun producto');
+  }
+  else{
+    viewPayment.style.display = 'flex';
+    viewCart.style.display = 'none';
+    showProductsList();
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
 });
 
 // Open product list

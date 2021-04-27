@@ -14,10 +14,13 @@ const numeroTarjeta = document.querySelector('#inputNumero'),
 // Validator
 btnValidar.addEventListener('click', () => {
   //llamar a la función isvalid
-  if (numeroTarjeta.value == '' || numeroTarjeta.value == null || nombreExpiracion.value == ''
-    || nombreExpiracion.value == null ){
+  if (numeroTarjeta.value == '' || numeroTarjeta.value == null ||
+      nombreExpiracion.value == '' || nombreExpiracion.value == null ||
+      mesExpiracion.value == '' || mesExpiracion.value == null ||
+      yearExpiracion.value == '' || yearExpiracion.value == null ||
+      ccv.value == '' || ccv.value == null
+   ){
     alert('Ingresa los datos');
-
   }
   else{
     numeroTarjeta.value = numeroTarjeta.value.replace(/\s/g, '');
