@@ -31,7 +31,7 @@
 
 ## Aprendizajes nuevos
 
-* Animaciones con CSS.
+* Animaciones con CSS. Siguiendo el tutorial [Taller de Diseño Web: Formulario Dinámico para Tarjeta de Crédito](https://youtu.be/7bciaLTTr7s)
 * Realizar pruebas unitarias con `HTMLint` y `ESLINT`.
 * Manejo del DOM y BOM con  `QuerySelector` y `window`
 
@@ -50,7 +50,7 @@ Este proyecto es parte de la ruta del bootcamp de [Laboratoria - Frontend Develo
       Demo 📱
     </a>
     <span> | </span>
-    <a href="https://github.com/fabiola29298/LIM012-card-validation">
+    <a href="https://github.com/fabiola29298/js-validacionTarjeta">
       Código
     </a>
     <span> | </span>
